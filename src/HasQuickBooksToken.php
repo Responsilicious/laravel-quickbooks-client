@@ -1,6 +1,6 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace Responsilicious\QuickBooks;
 
 trait HasQuickBooksToken
 {

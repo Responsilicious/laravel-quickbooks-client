@@ -4,3 +4,5 @@ phpunit.xml
 /build
 .phpunit.result.cache
 composer.lock
+.idea/laravel-quickbooks-client.iml
+.idea/workspace.xml

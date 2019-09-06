@@ -1,15 +1,15 @@
 <?php
 
-namespace Spinen\QuickBooks\Stubs;
+namespace Responsilicious\QuickBooks\Stubs;
 
-use Spinen\QuickBooks\Token;
+use Responsilicious\QuickBooks\Token;
 
 /**
  * Class TokenStub
  *
  * Stub for a Laravel Token model
  *
- * @package Spinen\QuickBooks\Stubs
+ * @package Responsilicious\QuickBooks\Stubs
  */
 class TokenStub extends Token
 {

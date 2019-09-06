@@ -1,11 +1,11 @@
 {
-    "name": "spinen/laravel-quickbooks-client",
-    "description": "SPINEN's Laravel Client for QuickBooks.",
+    "name": "responsilicious/laravel-quickbooks-client",
+    "description": "FORK OF SPINEN's Laravel Client for QuickBooks.",
     "keywords": [
         "quickbooks",
         "client",
         "laravel",
-        "spinen"
+        "responsilicious"
     ],
     "license": "MIT",
     "authors": [
@@ -30,19 +30,19 @@
     },
     "autoload": {
         "psr-4": {
-            "Spinen\\QuickBooks\\": "src/"
+            "Responsilicious\\QuickBooks\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spinen\\QuickBooks\\": "tests/"
+            "Responsilicious\\QuickBooks\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Spinen\\QuickBooks\\Providers\\ServiceProvider",
-                "Spinen\\QuickBooks\\Providers\\ClientServiceProvider"
+                "Responsilicious\\QuickBooks\\Providers\\ServiceProvider",
+                "Responsilicious\\QuickBooks\\Providers\\ClientServiceProvider"
             ]
         }
     },

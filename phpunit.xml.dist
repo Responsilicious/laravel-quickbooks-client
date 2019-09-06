@@ -19,7 +19,7 @@
          verbose="true">
 
     <testsuites>
-        <testsuite name="Spinen's Laravel QuickBooks Client">
+        <testsuite name="Responsilicious's Laravel QuickBooks Client">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>

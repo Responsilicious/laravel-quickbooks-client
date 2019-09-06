@@ -1,6 +1,6 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace Responsilicious\QuickBooks;
 
 use App\User;
 use Carbon\Carbon;
@@ -13,7 +13,7 @@ use QuickBooksOnline\API\Exception\SdkException;
 /**
  * Class Token
  *
- * @package Spinen\QuickBooks
+ * @package Responsilicious\QuickBooks
  *
  * @property boolean $hasValidAccessToken Is the access token valid
  * @property boolean $hasValidRefreshToken Is the refresh token valid
