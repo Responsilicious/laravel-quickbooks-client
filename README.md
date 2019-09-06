@@ -21,7 +21,7 @@ We solely use [Laravel](https://www.laravel.com) for our applications, so this p
 Install QuickBooks PHP Client:
 
 ```bash
-$ composer require spinen/laravel-quickbooks-client
+$ composer require Responsilicious/laravel-quickbooks-client
 ```
 
 The package uses the [auto registration feature](https://laravel.com/docs/5.8/packages#package-discovery) of Laravel 5.
@@ -72,8 +72,8 @@ Psy Shell v0.8.17 (PHP 7.1.14 — cli) by Justin Hileman
      id: 1,
      // Other keys removed for example
    }
->>> $quickbooks = app('Spinen\QuickBooks\Client') // or app('QuickBooks')
-=> Spinen\QuickBooks\Client {#1613}
+>>> $quickbooks = app('Responsilicious\QuickBooks\Client') // or app('QuickBooks')
+=> Responsilicious\QuickBooks\Client {#1613}
 >>> $quickbooks->getDataService()->getCompanyInfo();
 => QuickBooksOnline\API\Data\IPPCompanyInfo {#1673
      +CompanyName: "Sandbox Company_US_1",
@@ -87,7 +87,7 @@ You can call any of the resources as documented [in the SDK](https://intuit.gith
 
 ## Middleware
 
-If you have routes that will be dependent on the user's account having a usable QuickBooks OAuth token, there is an included middleware ```Spinen\QuickBooks\Laravel\Filter``` that gets registered as ```quickbooks``` that will ensure the account is linked and redirect them to the `connect` route if needed.
+If you have routes that will be dependent on the user's account having a usable QuickBooks OAuth token, there is an included middleware ```Responsilicious\QuickBooks\Laravel\Filter``` that gets registered as ```quickbooks``` that will ensure the account is linked and redirect them to the `connect` route if needed.
 
 Here is an example route definition:
 
