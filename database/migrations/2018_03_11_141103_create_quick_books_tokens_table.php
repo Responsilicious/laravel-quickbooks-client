@@ -22,12 +22,7 @@ class CreateQuickBooksTokensTable extends Migration
             $table->string('refresh_token');
             $table->datetime('refresh_token_expires_at');
 
-            $table->timestamps();
-
-            $table->foreign('user_id')
-                  ->references('id')
-                  ->on('users')
-                  ->onDelete('cascade');
+            $table->timestamps();=
         });
     }
 

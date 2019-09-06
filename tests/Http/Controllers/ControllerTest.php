@@ -1,14 +1,19 @@
 <?php
 
-namespace Spinen\QuickBooks\Http\Controllers;
+namespace Responsilicious\QuickBooks\Http\Controllers;
 
 use Illuminate\Contracts\View\Factory as ViewFactory;
 use Illuminate\Contracts\View\View;
 use Mockery;
 use Mockery\Mock;
-use Spinen\QuickBooks\Client as QuickBooks;
-use Spinen\QuickBooks\TestCase;
+use Responsilicious\QuickBooks\Client as QuickBooks;
+use Responsilicious\QuickBooks\TestCase;
 
+/**
+ * Class ControllerTest
+ *
+ * @package Responsilicious\QuickBooks\Http\Controllers
+ */
 class ControllerTest extends TestCase
 {
     /**

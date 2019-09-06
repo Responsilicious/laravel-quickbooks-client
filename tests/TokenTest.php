@@ -1,13 +1,18 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace Responsilicious\QuickBooks;
 
 use Carbon\Carbon;
 use Mockery;
 use QuickBooksOnline\API\Core\OAuth\OAuth2\OAuth2AccessToken;
-use Spinen\QuickBooks\Stubs\TokenStub;
-use Spinen\QuickBooks\Stubs\User;
+use Responsilicious\QuickBooks\Stubs\TokenStub;
+use Responsilicious\QuickBooks\Stubs\User;
 
+/**
+ * Class TokenTest
+ *
+ * @package Responsilicious\QuickBooks
+ */
 class TokenTest extends TestCase
 {
     /**

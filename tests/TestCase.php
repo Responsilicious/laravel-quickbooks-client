@@ -1,6 +1,6 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace Responsilicious\QuickBooks;
 
 use ArrayAccess;
 use Countable;
@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 /**
  * Class TestCase
  *
- * @package Tests\Spinen\BrowserFilter
+ * @package Tests\Responsilicious\QuickBooks
  */
 abstract class TestCase extends PHPUnitTestCase
 {

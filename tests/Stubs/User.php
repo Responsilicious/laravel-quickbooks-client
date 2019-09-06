@@ -1,9 +1,16 @@
 <?php
 
-namespace Spinen\QuickBooks\Stubs;
+namespace Responsilicious\QuickBooks\Stubs;
 
-use Spinen\QuickBooks\HasQuickBooksToken;
+use Responsilicious\QuickBooks\HasQuickBooksToken;
 
+/**
+ * Class User
+ *
+ * Stub for a Laravel User model
+ *
+ * @package Responsilicious\QuickBooks\Stubs
+ */
 class User
 {
     use HasQuickBooksToken;

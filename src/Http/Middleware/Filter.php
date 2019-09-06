@@ -1,19 +1,19 @@
 <?php
 
-namespace Spinen\QuickBooks\Http\Middleware;
+namespace Responsilicious\QuickBooks\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
-use Spinen\QuickBooks\Client;
-use Spinen\QuickBooks\Client as QuickBooks;
+use Responsilicious\QuickBooks\Client;
+use Responsilicious\QuickBooks\Client as QuickBooks;
 
 /**
  * Class Filter
  *
- * @package Spinen\QuickBooks
+ * @package Responsilicious\QuickBooks
  */
 class Filter
 {

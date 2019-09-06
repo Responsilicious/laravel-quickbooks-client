@@ -1,9 +1,14 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace Responsilicious\QuickBooks;
 
-use Spinen\QuickBooks\Stubs\User;
+use Responsilicious\QuickBooks\Stubs\User;
 
+/**
+ * Class HasQuickBooksTokenTest
+ *
+ * @package Responsilicious\QuickBooks
+ */
 class HasQuickBooksTokenTest extends TestCase
 {
     /**

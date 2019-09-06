@@ -1,12 +1,17 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace Responsilicious\QuickBooks;
 
 use Mockery;
 use Mockery\Mock;
 use QuickBooksOnline\API\DataService\DataService;
 use QuickBooksOnline\API\Exception\ServiceException;
 
+/**
+ * Class ClientTest
+ *
+ * @package Responsilicious\QuickBooks
+ */
 class ClientTest extends TestCase
 {
     /**

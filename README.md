@@ -21,14 +21,14 @@ We solely use [Laravel](https://www.laravel.com) for our applications, so this p
 Install QuickBooks PHP Client:
 
 ```bash
-$ composer require spinen/laravel-quickbooks-client
+$ composer require Responsilicious/laravel-quickbooks-client
 ```
 
 The package uses the [auto registration feature](https://laravel.com/docs/5.8/packages#package-discovery) of Laravel 5.
 
 ## Configuration
 
-1. You will need a ```quickBooksToken``` relationship on your ```User``` model.  There is a trait named ```Spinen\QuickBooks\Laravel\HasQuickBooksToken```, which you can include on your ```User``` model, which will setup the relationship.  **NOTE: If your ```User``` model is not ```App/User```, then you will need to configure the path in the ```configs/quickbooks.php``` as documented below.**
+1. You will need a ```quickBooksToken``` relationship on your ```User``` model.  There is a trait named ```Responsilicious\QuickBooks\Laravel\HasQuickBooksToken```, which you can include on your ```User``` model, which will setup the relationship.  **NOTE: If your ```User``` model is not ```App/User```, then you will need to configure the path in the ```configs/quickbooks.php``` as documented below.**
 
 2. Add the appropriate values to your ```.env```
 
@@ -72,8 +72,8 @@ Psy Shell v0.8.17 (PHP 7.1.14 — cli) by Justin Hileman
      id: 1,
      // Other keys removed for example
    }
->>> $quickbooks = app('Spinen\QuickBooks\Client') // or app('QuickBooks')
-=> Spinen\QuickBooks\Client {#1613}
+>>> $quickbooks = app('Responsilicious\QuickBooks\Client') // or app('QuickBooks')
+=> Responsilicious\QuickBooks\Client {#1613}
 >>> $quickbooks->getDataService()->getCompanyInfo();
 => QuickBooksOnline\API\Data\IPPCompanyInfo {#1673
      +CompanyName: "Sandbox Company_US_1",
@@ -87,7 +87,7 @@ You can call any of the resources as documented [in the SDK](https://intuit.gith
 
 ## Middleware
 
-If you have routes that will be dependent on the user's account having a usable QuickBooks OAuth token, there is an included middleware ```Spinen\QuickBooks\Laravel\Filter``` that gets registered as ```quickbooks``` that will ensure the account is linked and redirect them to the `connect` route if needed.
+If you have routes that will be dependent on the user's account having a usable QuickBooks OAuth token, there is an included middleware ```Responsilicious\QuickBooks\Laravel\Filter``` that gets registered as ```quickbooks``` that will ensure the account is linked and redirect them to the `connect` route if needed.
 
 Here is an example route definition:
 
