@@ -22,7 +22,7 @@ class CreateQuickBooksTokensTable extends Migration
             $table->string('refresh_token');
             $table->datetime('refresh_token_expires_at');
 
-            $table->timestamps();=
+            $table->timestamps();
         });
     }
 
